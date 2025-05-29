@@ -1,0 +1,324 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Las Mascotas - Compañeros de vida</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        header {
+            background-color: #00796b;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-style: italic;
+        }
+
+        nav {
+            background-color: #004d40;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            gap: 25px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #a7ffeb;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a:focus {
+            background-color: #00796b;
+            outline: none;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background-color: #ffffffcc;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #00796b;
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #004d40;
+            padding-bottom: 0.5rem;
+        }
+
+        section p {
+            font-size: 1.15rem;
+            margin-bottom: 1rem;
+        }
+
+        .mascota {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .mascota img {
+            flex: 1 1 250px;
+            max-width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            object-fit: cover;
+        }
+
+        .mascota p {
+            flex: 2 1 400px;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        footer {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 3rem;
+            font-size: 1rem;
+            box-shadow: inset 0 1px 2px rgba(255,255,255,0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .mascota {
+                flex-direction: column;
+                text-align: center;
+            }
+            .mascota p {
+                flex: none;
+            }
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Las Mascotas</h1>
+    <p>Compañeros que llenan de alegría nuestros hogares</p>
+</header>
+
+<nav>
+    <a href="#perros">Perros</a>
+    <a href="#gatos">Gatos</a>
+    <a href="#aves">Aves</a>
+    <a href="#conejos">Conejos</a>
+    <a href="#peces">Peces</a>
+    <a href="#reptiles">Reptiles</a>
+    <a href="#otros">Otras mascotas</a>
+</nav>
+
+<main>
+    <section id="perros">
+        <h2>Perros</h2>
+        <p>Los perros son conocidos mundialmente como los mejores amigos del hombre. Su fidelidad, alegría y capacidad para adaptarse a diferentes entornos los convierten en la mascota ideal para muchas familias. Existen cientos de razas con características únicas que se adaptan a diferentes estilos de vida y personalidades.</p>
+        
+        <div class="mascota">
+            <img src="https://cdn.sanity.io/images/5vm5yn1d/pro/5cb1f9400891d9da5a4926d7814bd1b89127ecba-1300x867.jpg?fm=webp&q=80" />
+            <p>Los perros requieren atención diaria, paseos regulares y una alimentación adecuada para mantener una vida sana y feliz. Además, disfrutan mucho de la compañía humana y los juegos al aire libre.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://es.mypet.com/wp-content/uploads/sites/23/2021/03/ThinkstockPhotos-590080440.jpg?w=1024" alt="Labrador retriever" />
+            <p>El Labrador Retriever es una de las razas más populares por su inteligencia y carácter amigable, ideal para familias con niños.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://www.hola.com/horizon/landscape/a71e34a2a6e2-cosassobrepastoraleman-t.jpg" alt="Pastor alemán" />
+            <p>El Pastor Alemán es conocido por su lealtad y habilidades para el trabajo, a menudo utilizado en labores policiales y de rescate.</p>
+        </div>
+    </section>
+
+    <section id="gatos">
+        <h2>Gatos</h2>
+        <p>Los gatos son animales independientes pero muy afectuosos con sus dueños. Su carácter curioso y juguetón los convierte en mascotas fascinantes, además de ser excelentes cazadores de pequeños insectos y roedores.</p>
+        
+        <div class="mascota">
+            <img src="https://blog.veterinariadelbosque.com/wp-content/uploads/2022/07/gato-curioso.jpg" alt="Gato curioso" />
+            <p>Los gatos necesitan un ambiente tranquilo y espacio para explorar. Son animales muy limpios y pasan gran parte de su tiempo acicalándose.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://pruebasok.es/wp-content/uploads/2024/12/iStock-1076432222-1024x687.jpg" alt="Gato siamés" />
+            <p>El gato siamés es conocido por su vocalización y su fuerte vínculo con sus dueños, además de su elegante pelaje y ojos azules.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://www.purina.es/sites/default/files/styles/ttt_image_510/public/2024-02/sitesdefaultfilesstylessquare_medium_440x440public2022-06Persian20Long20Hair.2.jpg?itok=qzNV_HuV" alt="Gato persa" />
+            <p>El gato persa destaca por su pelaje largo y su temperamento tranquilo y cariñoso.</p>
+        </div>
+    </section>
+
+    <section id="aves">
+        <h2>Aves</h2>
+        <p>Las aves como periquitos, canarios y loros son mascotas muy apreciadas por su belleza y canto. Son animales sociales que pueden aprender a interactuar con sus dueños y, en algunos casos, incluso a imitar sonidos o palabras.</p>
+        
+        <div class="mascota">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Melopsittacus_undulatus_-Atlanta_Zoo%2C_Georgia%2C_USA-8a-2c.jpg" />
+            <p>Los periquitos son pequeños y sociables, fáciles de cuidar y con un canto alegre que anima cualquier hogar.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Amazona_autumnalis_-Jurong_BirdPark-8b.jpg/250px-Amazona_autumnalis_-Jurong_BirdPark-8b.jpg" alt="Loro" />
+            <p>Los loros son inteligentes y pueden imitar sonidos humanos, requieren mucha atención y estimulación para evitar el aburrimiento.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://www.hola.com/horizon/square/f8000e7fbafe-curiosidades-canarios-por-que-hembras-cantan-t.jpg" alt="Canario" />
+            <p>Los canarios destacan por su canto melodioso y su carácter tranquilo, ideales para espacios interiores.</p>
+        </div>
+    </section>
+
+    <section id="conejos">
+        <h2>Conejos</h2>
+        <p>Los conejos son mascotas tiernas y tranquilas que pueden convivir bien en hogares con niños. Son herbívoros y necesitan una alimentación basada en heno, verduras frescas y agua limpia.</p>
+        
+        <div class="mascota">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStY6YriN7_rzDWUaaaRlBZv5tbidnswzatkQ&s" alt="Conejo blanco" />
+            <p>Los conejos necesitan un espacio seguro y cómodo, así como higiene constante y atención a su salud.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCLbYj1jK2jtAhgjO8p1jPkHgCgFBX_7Nq-A&s" alt="Conejo marrón" />
+            <p>Existen muchas razas de conejos, como el conejo mini lop, conocido por sus orejas caídas y su carácter amigable.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://www.hola.com/horizon/square/ea866be4a5be-manias-costumbres-conejos-t.jpg?im=Resize=(960),type=downsize" alt="Conejo en jardín" />
+            <p>Los conejos disfrutan de la libertad para saltar y explorar en ambientes controlados y seguros.</p>
+        </div>
+    </section>
+
+    <section id="peces">
+        <h2>Peces</h2>
+        <p>Los peces son mascotas que aportan belleza y tranquilidad a un espacio. No necesitan interacción directa, pero requieren un mantenimiento adecuado de su acuario para garantizar la calidad del agua y un ambiente saludable.</p>
+        
+        <div class="mascota">
+            <img src="https://olacuario.es/blog/wp-content/uploads/2022/06/pez-guppies.jpg" alt="Perro feliz" alt="Pez dorado" />
+            <p>Algunos peces comunes en acuarios son los goldfish, bettas y tetras. Es importante aprender sobre sus necesidades específicas para evitar enfermedades y mantenerlos felices.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://verdecora.es/blog/wp-content/uploads/2022/09/betta-acuario.jpg" alt="Pez betta" />
+            <p>El pez betta es famoso por sus colores vibrantes y su comportamiento territorial.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://aquaplantasmx.com/cdn/shop/products/NeonTetra_1_-_copia_1024x1024_0d6d6640-4c29-4f83-aa88-0ea7120c73e6.jpg?v=1500781116" alt="Pez tetra" />
+            <p>Los tetras son peces pequeños y pacíficos, ideales para acuarios comunitarios.</p>
+        </div>
+    </section>
+
+    <section id="reptiles">
+        <h2>Reptiles</h2>
+        <p>Los reptiles como las tortugas, iguanas y geckos están ganando popularidad como mascotas. Requieren un hábitat controlado con temperatura y humedad adecuadas para su bienestar.</p>
+        
+        <div class="mascota">
+            <img src="https://allyouneedisbiology.wordpress.com/wp-content/uploads/2015/07/martin_caretta_2000x13391.jpg?w=1038&h=576&crop=1" alt="Tortuga" />
+            <p>Las tortugas necesitan cuidados especiales, con un ambiente tanto acuático como terrestre.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://www.reptiletrade.mx/cdn/shop/files/LIME.jpg?v=1722630371" alt="Iguana" />
+            <p>Las iguanas requieren luz UVB y una dieta variada de vegetales frescos para mantenerse saludables.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://zooloexoticos.wordpress.com/wp-content/uploads/2018/07/8501263358_0cebba7ef2_o.jpg?w=1400" alt="Gecko" />
+            <p>Los geckos son reptiles nocturnos y fáciles de cuidar, perfectos para principiantes en el cuidado de reptiles.</p>
+        </div>
+    </section>
+
+    <section id="otros">
+        <h2>Otras mascotas</h2>
+        <p>Además de los animales mencionados, muchas personas optan por mascotas menos comunes como hurones, hámsters o chinchillas. Cada uno requiere un conocimiento específico y compromiso para su cuidado.</p>
+        
+        <div class="mascota">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB32HYEz43Ks-PaKzJUcBx-Yi062iV5qyfjg&s" alt="Hurón" />
+            <p>Los hurones son mascotas muy divertidas y cariñosas, pero requieren atención especial y un ambiente seguro para explorar.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://content.elmueble.com/medio/2022/06/09/hamster_ebe1fa86_1280x847.jpg" alt="Hámster" />
+            <p>Los hámsters son pequeños roedores que necesitan jaulas con túneles y ruedas para ejercitarse.</p>
+        </div>
+
+        <div class="mascota">
+            <img src="https://www.zoomalia.com/blogz/3589/tout-savoir-sur-chinchilla.jpeg" alt="Chinchilla" />
+            <p>Las chinchillas destacan por su pelaje suave y requieren un ambiente fresco y seco para su bienestar.</p>
+        </div>
+    </section>
+
+    <section id="cuidados">
+        <h2>Cuidados básicos para las mascotas</h2>
+        <p>Cuidar una mascota implica responsabilidad y compromiso. Es fundamental brindarles:</p>
+        <ul>
+            <li>Alimentación balanceada y adecuada para cada especie y edad.</li>
+            <li>Visitas regulares al veterinario para prevenir enfermedades.</li>
+            <li>Ejercicio y juegos para mantener su salud física y mental.</li>
+            <li>Un lugar seguro y cómodo para vivir.</li>
+            <li>Mucho amor y atención para fortalecer el vínculo afectivo.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Las Mascotas - Todos los derechos reservados | Página creada por Juan Pérez</p>
+</footer>
+
+</body>
+</html>
+
